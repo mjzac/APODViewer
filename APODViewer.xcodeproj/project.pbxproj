@@ -7,37 +7,154 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530A4FE31E6023A90087DF62 /* NasaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530A4FE21E6023A90087DF62 /* NasaAPI.swift */; };
+		530A4FE51E6029C00087DF62 /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530A4FE41E6029C00087DF62 /* APODModel.swift */; };
+		532CAC411E60590200EFFA69 /* APODViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CAC401E60590200EFFA69 /* APODViewerTests.swift */; };
+		532CAC491E606E9D00EFFA69 /* AspectFitImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CAC481E606E9D00EFFA69 /* AspectFitImageView.swift */; };
+		532CAC4B1E60826100EFFA69 /* CustomDecodables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CAC4A1E60826100EFFA69 /* CustomDecodables.swift */; };
+		532CAC4D1E60869B00EFFA69 /* APODModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CAC4C1E60869B00EFFA69 /* APODModelTests.swift */; };
+		532CAC4F1E608F2F00EFFA69 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CAC4E1E608F2F00EFFA69 /* Secrets.swift */; };
+		532CAC581E6091C200EFFA69 /* CustomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CAC571E6091C200EFFA69 /* CustomExtensions.swift */; };
 		53E0C8B21E5F3CC700065DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E0C8B11E5F3CC700065DDE /* AppDelegate.swift */; };
 		53E0C8B41E5F3CC700065DDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E0C8B31E5F3CC700065DDE /* ViewController.swift */; };
 		53E0C8B61E5F3CC700065DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53E0C8B51E5F3CC700065DDE /* Assets.xcassets */; };
 		53E0C8B91E5F3CC700065DDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53E0C8B71E5F3CC700065DDE /* Main.storyboard */; };
+		72888E403313141AA345DFFE /* Pods_APODViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F7031B216125C00D77001C /* Pods_APODViewerTests.framework */; };
+		D0EB94F3AD604871E1DD48B4 /* Pods_APODViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74EDB7E8EE4AA3EF232CFF6 /* Pods_APODViewer.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		532CAC431E60590200EFFA69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53E0C8A61E5F3CC700065DDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53E0C8AD1E5F3CC700065DDE;
+			remoteInfo = APODViewer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		404D0F397D0EB1EB4FEE7103 /* Pods-APODViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODViewerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APODViewerTests/Pods-APODViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		467DB20FDE716CADD6D72A43 /* Pods-APODViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-APODViewer/Pods-APODViewer.release.xcconfig"; sourceTree = "<group>"; };
+		504AF26884AC8F46E3831099 /* Pods-APODViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APODViewer/Pods-APODViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		530A4FE21E6023A90087DF62 /* NasaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NasaAPI.swift; sourceTree = "<group>"; };
+		530A4FE41E6029C00087DF62 /* APODModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODModel.swift; sourceTree = "<group>"; };
+		532CAC3E1E60590200EFFA69 /* APODViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APODViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		532CAC401E60590200EFFA69 /* APODViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewerTests.swift; sourceTree = "<group>"; };
+		532CAC421E60590200EFFA69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		532CAC481E606E9D00EFFA69 /* AspectFitImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectFitImageView.swift; sourceTree = "<group>"; };
+		532CAC4A1E60826100EFFA69 /* CustomDecodables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDecodables.swift; sourceTree = "<group>"; };
+		532CAC4C1E60869B00EFFA69 /* APODModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODModelTests.swift; sourceTree = "<group>"; };
+		532CAC4E1E608F2F00EFFA69 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		532CAC571E6091C200EFFA69 /* CustomExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomExtensions.swift; sourceTree = "<group>"; };
 		53E0C8AE1E5F3CC700065DDE /* APODViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APODViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E0C8B11E5F3CC700065DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53E0C8B31E5F3CC700065DDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53E0C8B51E5F3CC700065DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53E0C8B81E5F3CC700065DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53E0C8BA1E5F3CC700065DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95F625E032E7A5B4816DF479 /* Pods-APODViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODViewerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APODViewerTests/Pods-APODViewerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B1F7031B216125C00D77001C /* Pods_APODViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APODViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74EDB7E8EE4AA3EF232CFF6 /* Pods_APODViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APODViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		532CAC3B1E60590200EFFA69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72888E403313141AA345DFFE /* Pods_APODViewerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53E0C8AB1E5F3CC700065DDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EB94F3AD604871E1DD48B4 /* Pods_APODViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42AF8C3F802E74B6364F1A75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F74EDB7E8EE4AA3EF232CFF6 /* Pods_APODViewer.framework */,
+				B1F7031B216125C00D77001C /* Pods_APODViewerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		532CAC3F1E60590200EFFA69 /* APODViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				532CAC401E60590200EFFA69 /* APODViewerTests.swift */,
+				532CAC4C1E60869B00EFFA69 /* APODModelTests.swift */,
+				532CAC421E60590200EFFA69 /* Info.plist */,
+			);
+			path = APODViewerTests;
+			sourceTree = "<group>";
+		};
+		532CAC501E608FCA00EFFA69 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				532CAC481E606E9D00EFFA69 /* AspectFitImageView.swift */,
+				53E0C8B71E5F3CC700065DDE /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		532CAC521E608FE800EFFA69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				530A4FE41E6029C00087DF62 /* APODModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		532CAC531E60900400EFFA69 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				532CAC4A1E60826100EFFA69 /* CustomDecodables.swift */,
+				532CAC571E6091C200EFFA69 /* CustomExtensions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		532CAC541E60901A00EFFA69 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				532CAC4E1E608F2F00EFFA69 /* Secrets.swift */,
+			);
+			name = Secrets;
+			sourceTree = "<group>";
+		};
+		532CAC551E60903900EFFA69 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				530A4FE21E6023A90087DF62 /* NasaAPI.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		532CAC561E60904900EFFA69 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				53E0C8B31E5F3CC700065DDE /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		53E0C8A51E5F3CC700065DDE = {
 			isa = PBXGroup;
 			children = (
 				53E0C8B01E5F3CC700065DDE /* APODViewer */,
+				532CAC3F1E60590200EFFA69 /* APODViewerTests */,
 				53E0C8AF1E5F3CC700065DDE /* Products */,
+				CFB0A80EB50D23FDFD780291 /* Pods */,
+				42AF8C3F802E74B6364F1A75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				53E0C8AE1E5F3CC700065DDE /* APODViewer.app */,
+				532CAC3E1E60590200EFFA69 /* APODViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,24 +171,63 @@
 			isa = PBXGroup;
 			children = (
 				53E0C8B11E5F3CC700065DDE /* AppDelegate.swift */,
-				53E0C8B31E5F3CC700065DDE /* ViewController.swift */,
+				532CAC521E608FE800EFFA69 /* Models */,
+				532CAC501E608FCA00EFFA69 /* Views */,
+				532CAC561E60904900EFFA69 /* Controllers */,
+				532CAC551E60903900EFFA69 /* Networking */,
+				532CAC541E60901A00EFFA69 /* Secrets */,
+				532CAC531E60900400EFFA69 /* Helpers */,
 				53E0C8B51E5F3CC700065DDE /* Assets.xcassets */,
-				53E0C8B71E5F3CC700065DDE /* Main.storyboard */,
 				53E0C8BA1E5F3CC700065DDE /* Info.plist */,
 			);
 			path = APODViewer;
 			sourceTree = "<group>";
 		};
+		CFB0A80EB50D23FDFD780291 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				504AF26884AC8F46E3831099 /* Pods-APODViewer.debug.xcconfig */,
+				467DB20FDE716CADD6D72A43 /* Pods-APODViewer.release.xcconfig */,
+				404D0F397D0EB1EB4FEE7103 /* Pods-APODViewerTests.debug.xcconfig */,
+				95F625E032E7A5B4816DF479 /* Pods-APODViewerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		532CAC3D1E60590200EFFA69 /* APODViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532CAC471E60590200EFFA69 /* Build configuration list for PBXNativeTarget "APODViewerTests" */;
+			buildPhases = (
+				C56DE46D4A7C50A467D5B2B7 /* [CP] Check Pods Manifest.lock */,
+				532CAC3A1E60590200EFFA69 /* Sources */,
+				532CAC3B1E60590200EFFA69 /* Frameworks */,
+				532CAC3C1E60590200EFFA69 /* Resources */,
+				0246BB8620114A2263225CD2 /* [CP] Embed Pods Frameworks */,
+				FD29E3C95500E341849AD9D2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				532CAC441E60590200EFFA69 /* PBXTargetDependency */,
+			);
+			name = APODViewerTests;
+			productName = APODViewerTests;
+			productReference = 532CAC3E1E60590200EFFA69 /* APODViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		53E0C8AD1E5F3CC700065DDE /* APODViewer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53E0C8BD1E5F3CC700065DDE /* Build configuration list for PBXNativeTarget "APODViewer" */;
 			buildPhases = (
+				3A1F3F9001605793D915C8D7 /* [CP] Check Pods Manifest.lock */,
 				53E0C8AA1E5F3CC700065DDE /* Sources */,
 				53E0C8AB1E5F3CC700065DDE /* Frameworks */,
 				53E0C8AC1E5F3CC700065DDE /* Resources */,
+				B82DFC306D9C7FC6844F2032 /* [CP] Embed Pods Frameworks */,
+				AAEB55E9C27C930897531FB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -91,6 +248,12 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Perleybrook Labs LLC";
 				TargetAttributes = {
+					532CAC3D1E60590200EFFA69 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M2DJ6G2WMP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 53E0C8AD1E5F3CC700065DDE;
+					};
 					53E0C8AD1E5F3CC700065DDE = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = M2DJ6G2WMP;
@@ -112,11 +275,19 @@
 			projectRoot = "";
 			targets = (
 				53E0C8AD1E5F3CC700065DDE /* APODViewer */,
+				532CAC3D1E60590200EFFA69 /* APODViewerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		532CAC3C1E60590200EFFA69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53E0C8AC1E5F3CC700065DDE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,17 +299,133 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0246BB8620114A2263225CD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APODViewerTests/Pods-APODViewerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A1F3F9001605793D915C8D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AAEB55E9C27C930897531FB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APODViewer/Pods-APODViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B82DFC306D9C7FC6844F2032 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APODViewer/Pods-APODViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C56DE46D4A7C50A467D5B2B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD29E3C95500E341849AD9D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APODViewerTests/Pods-APODViewerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		532CAC3A1E60590200EFFA69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532CAC411E60590200EFFA69 /* APODViewerTests.swift in Sources */,
+				532CAC4D1E60869B00EFFA69 /* APODModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53E0C8AA1E5F3CC700065DDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				53E0C8B41E5F3CC700065DDE /* ViewController.swift in Sources */,
+				530A4FE31E6023A90087DF62 /* NasaAPI.swift in Sources */,
+				532CAC581E6091C200EFFA69 /* CustomExtensions.swift in Sources */,
+				532CAC4F1E608F2F00EFFA69 /* Secrets.swift in Sources */,
+				532CAC491E606E9D00EFFA69 /* AspectFitImageView.swift in Sources */,
 				53E0C8B21E5F3CC700065DDE /* AppDelegate.swift in Sources */,
+				532CAC4B1E60826100EFFA69 /* CustomDecodables.swift in Sources */,
+				530A4FE51E6029C00087DF62 /* APODModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		532CAC441E60590200EFFA69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53E0C8AD1E5F3CC700065DDE /* APODViewer */;
+			targetProxy = 532CAC431E60590200EFFA69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		53E0C8B71E5F3CC700065DDE /* Main.storyboard */ = {
@@ -152,6 +439,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		532CAC451E60590200EFFA69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 404D0F397D0EB1EB4FEE7103 /* Pods-APODViewerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M2DJ6G2WMP;
+				INFOPLIST_FILE = APODViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.perleybrook.APODViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APODViewer.app/Contents/MacOS/APODViewer";
+			};
+			name = Debug;
+		};
+		532CAC461E60590200EFFA69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95F625E032E7A5B4816DF479 /* Pods-APODViewerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M2DJ6G2WMP;
+				INFOPLIST_FILE = APODViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.perleybrook.APODViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APODViewer.app/Contents/MacOS/APODViewer";
+			};
+			name = Release;
+		};
 		53E0C8BB1E5F3CC700065DDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -244,6 +563,7 @@
 		};
 		53E0C8BE1E5F3CC700065DDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504AF26884AC8F46E3831099 /* Pods-APODViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -258,6 +578,7 @@
 		};
 		53E0C8BF1E5F3CC700065DDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 467DB20FDE716CADD6D72A43 /* Pods-APODViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -273,6 +594,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		532CAC471E60590200EFFA69 /* Build configuration list for PBXNativeTarget "APODViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532CAC451E60590200EFFA69 /* Debug */,
+				532CAC461E60590200EFFA69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		53E0C8A91E5F3CC700065DDE /* Build configuration list for PBXProject "APODViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -289,6 +619,7 @@
 				53E0C8BF1E5F3CC700065DDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

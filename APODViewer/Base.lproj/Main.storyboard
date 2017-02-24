@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -653,7 +655,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="APODViewer" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
@@ -665,7 +667,7 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="701" y="580" width="420" height="300"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>
@@ -679,15 +681,103 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="APODViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="7wX-1T-1Bg">
+                                <rect key="frame" x="0.0" y="100" width="420" height="200"/>
+                                <subviews>
+                                    <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Fnv-dP-d1Z" customClass="AspectFitImageView" customModule="APODViewer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="420" height="200"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="NXJ-vN-vgb"/>
+                                    </imageView>
+                                    <visualEffectView wantsLayer="YES" appearanceType="vibrantDark" blendingMode="withinWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="895-rg-FUp">
+                                        <rect key="frame" x="0.0" y="0.0" width="420" height="39"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULK-Vm-EVH">
+                                                <rect key="frame" x="6" y="0.0" width="420" height="39"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="JGy-41-PWv">
+                                                    <font key="font" size="16" name="ChalkboardSE-Bold"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="BGs-vG-2hO"/>
+                                        </constraints>
+                                    </visualEffectView>
+                                    <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="xRl-g2-apl">
+                                        <rect key="frame" x="202" y="92" width="16" height="16"/>
+                                    </progressIndicator>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xRl-g2-apl" firstAttribute="centerX" secondItem="7wX-1T-1Bg" secondAttribute="centerX" id="P7W-bf-Glz"/>
+                                    <constraint firstAttribute="trailing" secondItem="895-rg-FUp" secondAttribute="trailing" id="hdb-BC-xzp"/>
+                                    <constraint firstItem="Fnv-dP-d1Z" firstAttribute="leading" secondItem="7wX-1T-1Bg" secondAttribute="leading" id="iYZ-46-eUn"/>
+                                    <constraint firstItem="Fnv-dP-d1Z" firstAttribute="top" secondItem="7wX-1T-1Bg" secondAttribute="top" id="sSq-yP-VOR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fnv-dP-d1Z" secondAttribute="bottom" id="v3p-Sc-A3y"/>
+                                    <constraint firstAttribute="bottom" secondItem="895-rg-FUp" secondAttribute="bottom" id="vaD-C9-lmM"/>
+                                    <constraint firstItem="895-rg-FUp" firstAttribute="leading" secondItem="7wX-1T-1Bg" secondAttribute="leading" id="wt2-wc-VxH"/>
+                                    <constraint firstItem="xRl-g2-apl" firstAttribute="centerY" secondItem="7wX-1T-1Bg" secondAttribute="centerY" id="ybK-Fh-MUu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fnv-dP-d1Z" secondAttribute="trailing" id="zVh-Tx-OWv"/>
+                                </constraints>
+                            </customView>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eO-vT-jso">
+                                <rect key="frame" x="0.0" y="2" width="420" height="100"/>
+                                <clipView key="contentView" id="eZv-bE-3dg">
+                                    <rect key="frame" x="0.0" y="0.0" width="420" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="J63-1A-OGK">
+                                            <rect key="frame" x="0.0" y="0.0" width="420" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" red="0.93735166139240511" green="0.90217892932489452" blue="0.2981276371308017" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <size key="minSize" width="420" height="100"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ee9-rp-ab1"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="O2Y-u1-9Pr">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="I79-4v-q8T">
+                                    <rect key="frame" x="404" y="0.0" width="16" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7wX-1T-1Bg" secondAttribute="bottom" constant="100" id="0Ai-2u-EU3"/>
+                            <constraint firstItem="9eO-vT-jso" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="ANQ-fB-hUK"/>
+                            <constraint firstAttribute="trailing" secondItem="9eO-vT-jso" secondAttribute="trailing" id="QbB-jI-g3I"/>
+                            <constraint firstAttribute="trailing" secondItem="7wX-1T-1Bg" secondAttribute="trailing" id="WuM-fM-pf4"/>
+                            <constraint firstItem="7wX-1T-1Bg" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="bwY-50-gl5"/>
+                            <constraint firstAttribute="bottom" secondItem="9eO-vT-jso" secondAttribute="bottom" constant="2" id="gRm-4w-OgP"/>
+                            <constraint firstItem="7wX-1T-1Bg" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="mJz-T8-WmJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="apodDescription" destination="J63-1A-OGK" id="uH6-Oh-u5K"/>
+                        <outlet property="apodImageView" destination="Fnv-dP-d1Z" id="9Z1-jc-a31"/>
+                        <outlet property="apodTitle" destination="ULK-Vm-EVH" id="y9c-GC-pWN"/>
+                        <outlet property="progressIndicator" destination="xRl-g2-apl" id="LVd-p8-rwR"/>
+                        <outlet property="visualEffectView" destination="895-rg-FUp" id="8xt-4a-dfs"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="854"/>
         </scene>
     </scenes>
 </document>
